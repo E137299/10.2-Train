@@ -4,7 +4,7 @@
 [AWT Documentation](https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics.html)
 
 
-![train](assets/train.PNG)
+![train](train.PNG)
 
   
  
@@ -53,7 +53,7 @@ The Train class requires an addCar method that adds a new RailCar object to a ra
 The Train class also needs a showCars method, which displays the car in the sequence that the cars were added. The very first car added to the Train object is displayed at the (x,y) coordinate that was provided with the instantiation of the new Train object. 
  
 ### 80-Point Version Output 
-![80 point](assets/eighty.PNG)
+![80 point](eighty.PNG)
  
  
 ## 100-Point Version Specifics  
@@ -92,7 +92,7 @@ The Train class also needs a showCars method, which displays the car in the sequ
  
 ### 100-Point Version Output 
 
-![hundred version](assets/hundred.PNG)
+![hundred version](hundred.PNG)
 
 It was stated earlier that there are some inheritance issues that can cause a problem. Your teacher will decide if and when to you give you appropriate hints to solve this problem. You may not get any help at all. The only hint given in the lab assignment is to watch out for this 100-Point version output. 
 This output shows some very confused RailCar objects. It is the result of not handling inheritance 

@@ -1,15 +1,27 @@
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 import java.util.ArrayList;
 
-
-public class Display extends JPanel{
+public class Display extends JPanel
+{
 	public Display(){}
-	// paintCommponent is not explicitly called. It is executed whenever the JPanel is called.
-	// Graphics g object is implicitly passed to function.
-	public void paintComponent(Graphics g){
-		super.paintComponent(g); //satisfies the parent class' requirements.
-		setBackground(Color.WHITE);
 
+	public void paintComponent(Graphics g) 
+	{
+    super.paintComponent(g);
+    setBackground(Color.WHITE);
+
+    Train train = new Train(100,300);
+
+    train.addCar("Locomotive", Color.BLUE);
+    train.addCar("PassengerCar", Color.GRAY);
+    train.addCar("PassengerCar", Color.GRAY);
+    train.addCar("FreightCar", Color.GREEN);
+    train.addCar(3, "PassengerCar", Color.GRAY);
+    train.addCar("FreightCar", Color.GREEN);
+    train.addCar("Caboose", Color.RED);
+    train.addCar(6, "FreightCar", Color.GREEN);
+
+    train.showCars(g);
 	}
 }

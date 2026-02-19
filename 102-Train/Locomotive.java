@@ -19,8 +19,14 @@ public class Locomotive extends RailCar {
 
 
         g.setColor(Color.BLACK);
-        int[] triX = {x - 100, x + 50, x};  
-        int[] triY = {y + 50/2, y + CAR_HEIGHT, y + CAR_HEIGHT+100};
+        int[] triX = {x, x - 50, x};  
+        int[] triY = {y + 50/2, y + CAR_HEIGHT, y + CAR_HEIGHT};
         g.fillPolygon(triX, triY, 3);     
+
+        g.setColor(Color.LIGHT_GRAY);
+        g.fillOval(x+70, y-90, 60, 25);
+        g.fillOval(x+80, y-85, 80, 40);
+        g.fillOval(x+70, y-75, 60, 25);
+
     }
 }
